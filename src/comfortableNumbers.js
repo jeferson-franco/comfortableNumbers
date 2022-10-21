@@ -27,3 +27,26 @@ module.exports = solution;
 // npm test squareDigitsSequence
 
 // alternative solution
+// function solution(l, r) {
+//     function addDigits(num) {
+//         let sum = 0;
+
+//         while (num) {
+//             sum += num % 10;
+//             num = Math.floor(num / 10);
+//         }
+//         return sum;
+//     }
+
+//     function comfortable(a, b) {
+//         return a - addDigits(a) <= b && b <= a + addDigits(a);
+//     }
+
+//     let numbers = 0;
+//     for (let a = l; a < r; a++) {
+//         for (let b = a + 1; b <= r; b++) {
+//             if (comfortable(a, b) && comfortable(b, a)) numbers++;
+//         }
+//     }
+//     return numbers;
+// }
